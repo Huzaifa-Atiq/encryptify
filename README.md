@@ -70,7 +70,7 @@ The interface is built with **CustomTkinter** for a clean and modern UI.
 ## ▶️ How to Run
 
 ### Option 1 — Run the EXE
-Just open the `.exe` file generated with PyInstaller.  
+Download the precompiled `.exe` file from the releases page and simply run it.  
 (No installation required.)
 
 ### Option 2 — Run the Source Code
