@@ -89,6 +89,8 @@ python user_interface.py
 - "Remember last file" option
 - File chooser dialog instead of text input
 
+If you find **Encryptify** useful, please consider giving it a ⭐ on GitHub! Your support is greatly appreciated.
+
 ## 📜 License
 
 This project is licensed under the **MIT License** — free to use, modify, and distribute.
