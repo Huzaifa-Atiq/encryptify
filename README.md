@@ -77,7 +77,8 @@ Just open the `.exe` file generated with PyInstaller.
 1. Install dependencies:
 ```bash
 pip install cryptography customtkinter
-python user_interface.py`\`\`\
+python user_interface.py
+```
 
 ## 🚧 Possible Improvements
 
