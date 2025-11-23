@@ -1,5 +1,16 @@
 import customtkinter as ctk
+from tkinter import filedialog
 import logic
+
+
+def browse_file():
+    file_path = filedialog.askopenfilename(
+        title="Select a file",
+        filetypes=[("All Files", "*.*")]
+    )
+    if file_path:
+        path_input.delete(0, ctk.END)
+        path_input.insert(0, file_path)
 
 
 def submit_encrypt():
@@ -67,11 +78,19 @@ mode = ctk.StringVar(value="Encryption")
 label_mode = ctk.CTkLabel(app, text=f"Mode: {mode.get()}", font=("Arial", 20))
 label_mode.pack(pady=40)
 
-#file path
-label_path = ctk.CTkLabel(app, text="file path", font=("Arial", 12))
+# file path
+label_path = ctk.CTkLabel(app, text="File Path", font=("Arial", 12))
 label_path.pack(pady=1)
-path_input = ctk.CTkEntry(app, width=300, placeholder_text="Enter file path")
-path_input.pack()
+
+path_frame = ctk.CTkFrame(app)
+path_frame.pack()
+
+path_input = ctk.CTkEntry(path_frame, width=350, placeholder_text="Select file...")
+path_input.pack(side="left", padx=5)
+
+browse_button = ctk.CTkButton(path_frame, text="Browse", width=80, command=browse_file)
+browse_button.pack(side="left", padx=5)
+
 
 #password
 label_pass = ctk.CTkLabel(app, text="password", font=("Arial", 12))
