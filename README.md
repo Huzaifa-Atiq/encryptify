@@ -51,13 +51,6 @@ The interface is built with **CustomTkinter** for a clean and modern UI.
 
 ## 📁 Project Structure
 
-encryptify/
-│
-├── user_interface.py # GUI (CustomTkinter)
-├── logic.py # Encryption/decryption logic
-└── README.md # Documentation
-
-
 - **user_interface.py** — Handles the GUI and calls logic functions.  
 - **logic.py** — Handles encryption, decryption, metadata extraction, salt/nonce, and file reconstruction.
 
@@ -84,7 +77,7 @@ Just open the `.exe` file generated with PyInstaller.
 1. Install dependencies:
 ```bash
 pip install cryptography customtkinter
-python user_interface.py
+python user_interface.py```
 
 ## 🚧 Possible Improvements
 
