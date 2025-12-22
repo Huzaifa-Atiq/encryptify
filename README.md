@@ -87,7 +87,6 @@ python user_interface.py
 - Themes (light/dark toggle)
 - Password strength meter
 - "Remember last file" option
-- File chooser dialog instead of text input
 
 If you find **Encryptify** useful, please consider giving it a ⭐ on GitHub! Your support is greatly appreciated.
 
